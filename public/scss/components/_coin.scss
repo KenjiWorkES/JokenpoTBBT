@@ -6,6 +6,12 @@
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2) rotate(25deg);
+  }
 
   //colors
   &--blue {
@@ -55,6 +61,10 @@
     left: 50%;
     top: 0;
     transform: translateX(-50%);
+
+    &:hover {
+      transform: translateX(-50%) scale(1.2) rotate(25deg);
+    }
   }
 
   &--leftTop {
