@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "name": "rock",
+    "image": "/assets/icon-rock.svg",
+    "color": "red"
+  },
+  {
+    "id": "2",
+    "name": "scissors",
+    "image": "/assets/icon-scissors.svg",
+    "color": "yellow"
+  },
+  {
+    "id": "3",
+    "name": "paper",
+    "image": "/assets/icon-paper.svg",
+    "color": "blue"
+  },
+  {
+    "id": "4",
+    "name": "lizard",
+    "image": "/assets/icon-lizard.svg",
+    "color": "purple"
+  },
+  {
+    "id": "5",
+    "name": "spock",
+    "image": "/assets/icon-spock.svg",
+    "color": "cyan"
+  }
+]
