@@ -1,8 +1,8 @@
 import React from "react";
-import "./App.css";
+import { StartPage } from "@/components/pages";
 
 function App() {
-  return <div>Teste</div>;
+  return <StartPage />;
 }
 
 export default App;

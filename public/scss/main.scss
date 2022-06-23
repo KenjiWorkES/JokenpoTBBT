@@ -1,8 +1,10 @@
-@use "abstracts/functions";
-@use "abstracts/mixins";
-@use "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
-@use "base/base";
-@use "base/animations";
-@use "base/typography";
-@use "base/utilities";
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/coin";
