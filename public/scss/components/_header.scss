@@ -6,6 +6,8 @@
   border-radius: 2rem;
   display: flex;
   justify-content: space-between;
+  animation: slideDown 1s;
+  backface-visibility: hidden;
 
   &__box {
     background-color: $white;

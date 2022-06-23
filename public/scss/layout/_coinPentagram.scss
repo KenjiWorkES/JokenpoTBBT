@@ -1,6 +1,7 @@
 .coinPentagram {
   margin: 0 auto;
   max-width: 144rem;
+  animation: slideUp 1s;
   &__background {
     background-image: url("../../assets/bg-pentagon.svg");
     background-position: center;
