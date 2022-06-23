@@ -1,4 +1,6 @@
 .coinPentagram {
+  margin: 0 auto;
+  max-width: 144rem;
   &__background {
     background-image: url("../../assets/bg-pentagon.svg");
     background-position: center;
@@ -6,5 +8,6 @@
     position: relative;
     width: 47rem;
     height: 50rem;
+    margin: 0 auto;
   }
 }

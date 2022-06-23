@@ -1,0 +1,30 @@
+.header {
+  margin: 0 auto;
+  border: 3px solid $light-gray;
+  max-width: 80rem;
+  padding: 1.5rem 3rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+
+  &__box {
+    background-color: $white;
+    width: 17rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  &__text {
+    color: $blue-primary;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: $weight-semibold;
+  }
+
+  &__score {
+    font-size: 6rem;
+    font-weight: $weight-bold;
+    color: $dark-gray;
+  }
+}
