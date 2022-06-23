@@ -1,10 +1,10 @@
-import { GameCoin } from "@/components/molecules";
+import { CoinPentagram } from "@/components/organisms";
 import { PageBackground } from "@/components/atoms";
 
 const StartPage = () => {
   return (
     <PageBackground>
-      <GameCoin image="/assets/icon-paper.svg"></GameCoin>
+      <CoinPentagram></CoinPentagram>
     </PageBackground>
   );
 };

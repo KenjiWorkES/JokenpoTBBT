@@ -1,0 +1,10 @@
+.coinPentagram {
+  &__background {
+    background-image: url("../../assets/bg-pentagon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 47rem;
+    height: 50rem;
+  }
+}

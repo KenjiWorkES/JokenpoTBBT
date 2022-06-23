@@ -7,6 +7,7 @@
   height: 15rem;
   border-radius: 50%;
 
+  //colors
   &--blue {
     background-image: linear-gradient(
       to bottom,
@@ -46,6 +47,38 @@
       $cyan-secondary
     );
     box-shadow: 0px 7px 1px 0px $cyan-terciary;
+  }
+
+  //position
+  &--center {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+
+  &--leftTop {
+    position: absolute;
+    left: 0;
+    top: 27%;
+  }
+
+  &--leftBottom {
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+  }
+
+  &--rightTop {
+    position: absolute;
+    right: 0;
+    top: 27%;
+  }
+
+  &--rightBottom {
+    position: absolute;
+    right: 10%;
+    bottom: 0;
   }
 
   &__background {

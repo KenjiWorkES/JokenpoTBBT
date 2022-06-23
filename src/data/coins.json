@@ -3,30 +3,35 @@
     "id": "1",
     "name": "rock",
     "image": "/assets/icon-rock.svg",
-    "color": "red"
+    "color": "red",
+    "position": "rightBottom"
   },
   {
     "id": "2",
     "name": "scissors",
     "image": "/assets/icon-scissors.svg",
-    "color": "yellow"
+    "color": "yellow",
+    "position": "center"
   },
   {
     "id": "3",
     "name": "paper",
     "image": "/assets/icon-paper.svg",
-    "color": "blue"
+    "color": "blue",
+    "position": "rightTop"
   },
   {
     "id": "4",
     "name": "lizard",
     "image": "/assets/icon-lizard.svg",
-    "color": "purple"
+    "color": "purple",
+    "position": "leftBottom"
   },
   {
     "id": "5",
     "name": "spock",
     "image": "/assets/icon-spock.svg",
-    "color": "cyan"
+    "color": "cyan",
+    "position": "leftTop"
   }
 ]
