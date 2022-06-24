@@ -1,6 +1,6 @@
 const RulesButton = () => {
   return (
-    <a href="#button">
+    <a href="#rules">
       <button className="ruleButton">Rules</button>
     </a>
   );
