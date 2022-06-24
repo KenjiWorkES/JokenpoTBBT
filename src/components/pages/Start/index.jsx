@@ -1,5 +1,5 @@
 import { GameHeader, Popup, CoinPentagram } from "@/components/organisms";
-import { PageBackground } from "@/components/atoms";
+import { PageBackground, MainButton } from "@/components/atoms";
 import RulesButton from "../../atoms/RulesButton";
 
 import ReactDOM from "react-dom";
@@ -14,6 +14,9 @@ const StartPage = () => {
     <PageBackground>
       <GameHeader></GameHeader>
       <CoinPentagram></CoinPentagram>
+      <div className="pageBackground__container u-margin-top-big">
+        <MainButton title="Play Now" />
+      </div>
       <RulesButton></RulesButton>
       {popup}
     </PageBackground>
