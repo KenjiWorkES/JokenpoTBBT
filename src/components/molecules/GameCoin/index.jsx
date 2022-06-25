@@ -1,15 +1,24 @@
 import { CoinImage } from "@/components/atoms";
 
-const GameCoin = ({ image, color, position, id }) => {
+const GameCoin = ({ image, color, position, id, game, onClick }) => {
   const colorClass = color ? `coin--${color}` : "";
   const positionClass = position ? `coin--${position}` : "";
+  const gameClass = game ? `coin--${game}` : "";
+
+  const onClickHandler = (event) => {
+    onClick && onClick(event.target.id);
+  };
 
   return (
-    <div id={id} className={"coin " + colorClass + " " + positionClass}>
+    <button
+      id={id}
+      className={"coin " + colorClass + " " + positionClass + " " + gameClass}
+      onClick={onClickHandler}
+    >
       <div className="coin__background">
-        <CoinImage image={image} />
+        <CoinImage id={id} image={image} />
       </div>
-    </div>
+    </button>
   );
 };
 

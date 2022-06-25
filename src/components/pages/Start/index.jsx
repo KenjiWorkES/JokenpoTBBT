@@ -1,10 +1,17 @@
 import { GameHeader, Popup, CoinPentagram } from "@/components/organisms";
-import { PageBackground, MainButton } from "@/components/atoms";
-import RulesButton from "../../atoms/RulesButton";
+import { PageBackground, MainButton, RulesButton } from "@/components/atoms";
+import { useDispatch } from "react-redux/es/exports";
+import { gameActions } from "@/store";
 
 import ReactDOM from "react-dom";
 
 const StartPage = () => {
+  const dispatch = useDispatch();
+
+  const startPlayHandler = () => {
+    dispatch(gameActions.startGame());
+  };
+
   const popup = ReactDOM.createPortal(
     <Popup></Popup>,
     document.getElementById("root-rules")
@@ -15,7 +22,9 @@ const StartPage = () => {
       <GameHeader></GameHeader>
       <CoinPentagram></CoinPentagram>
       <div className="pageBackground__container u-margin-top-big">
-        <MainButton title="Play Now" />
+        <a href="#choice">
+          <MainButton onClick={startPlayHandler} title="Play Now" />
+        </a>
       </div>
       <RulesButton></RulesButton>
       {popup}
