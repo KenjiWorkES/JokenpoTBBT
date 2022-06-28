@@ -1,5 +1,9 @@
+import { useSelector } from "react-redux/es/hooks/useSelector";
+
 const GameCounter = () => {
-  return <h2 className="header__score">0</h2>;
+  const result = useSelector((state) => state.resultCounter);
+
+  return <h2 className="header__score">{result}</h2>;
 };
 
 export default GameCounter;

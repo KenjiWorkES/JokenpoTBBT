@@ -25,22 +25,28 @@ const GameControl = ({ title, isPlayerChoice }) => {
     <div className="game__control">
       <h3 className="game__title u-margin-bottom-big">{title}</h3>
       <div className="game__coinArea">
-        {isPlayerChoice && hasChoice && (
-          <GameCoin
-            id={playerCoin[0].id}
-            image={playerCoin[0].image}
-            color={playerCoin[0].color}
-            game="game"
-          />
-        )}
-        {!isPlayerChoice && hasChoice && (
-          <GameCoin
-            id={houseCoin[0].id}
-            image={houseCoin[0].image}
-            color={houseCoin[0].color}
-            game="game"
-          />
-        )}
+        {isPlayerChoice &&
+          hasChoice &&
+          playerCoin.map((player) => (
+            <GameCoin
+              key={player.id}
+              id={player.id}
+              image={player.image}
+              color={player.color}
+              game="game"
+            />
+          ))}
+        {!isPlayerChoice &&
+          hasChoice &&
+          houseCoin.map((house) => (
+            <GameCoin
+              key={house.id}
+              id={house.id}
+              image={house.image}
+              color={house.color}
+              game="game"
+            />
+          ))}
       </div>
     </div>
   );

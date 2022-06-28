@@ -8,6 +8,7 @@ const ChosePopup = () => {
   const playerChoiceHandler = (id) => {
     dispatch(gameActions.playerTurn({ id: id }));
     dispatch(gameActions.houseTurn());
+    dispatch(gameActions.calculateResult());
   };
 
   return (
