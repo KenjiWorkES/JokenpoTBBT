@@ -13,7 +13,9 @@ const gameManager = createSlice({
     resultCounter: 0,
   },
   reducers: {
-    recoverResult(state) {},
+    recoverResult(state, actions) {
+      state.resultCounter = actions.payload.result;
+    },
     startGame(state) {
       state.isPlaying = !state.isPlaying;
     },
