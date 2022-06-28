@@ -8,6 +8,7 @@ const gameManager = createSlice({
     isPlaying: false,
     playerChoice: 0,
     houseChoice: 0,
+    result: 0,
   },
   reducers: {
     startGame(state) {
@@ -21,6 +22,7 @@ const gameManager = createSlice({
         Math.random() * (5 - 1 + 1) + 1
       ).toString();
     },
+    calculateResult(state) {},
   },
 });
 

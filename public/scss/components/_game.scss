@@ -1,11 +1,11 @@
 .game {
-  max-width: 80rem;
+  max-width: 100rem;
   margin: 0 auto;
   display: flex;
   justify-content: center;
 
   &__control {
-    width: 50%;
+    width: 38%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,5 +29,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  &__resultBox {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__resultTitle {
+    color: $white;
+    letter-spacing: 0.1rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    text-align: center;
   }
 }

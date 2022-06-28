@@ -3,7 +3,7 @@ const MainButton = ({ title, className, onClick }) => {
   const onClickHandler = onClick ? onClick : () => {};
 
   return (
-    <button onClick={onClickHandler} className={"mainButton" + modifyClasses}>
+    <button onClick={onClickHandler} className={"mainButton " + modifyClasses}>
       {title}
     </button>
   );

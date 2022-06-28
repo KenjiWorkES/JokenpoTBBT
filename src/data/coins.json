@@ -1,24 +1,24 @@
 [
   {
     "id": "1",
-    "name": "rock",
-    "image": "/assets/icon-rock.svg",
-    "color": "red",
-    "position": "rightBottom"
-  },
-  {
-    "id": "2",
     "name": "scissors",
     "image": "/assets/icon-scissors.svg",
     "color": "yellow",
     "position": "center"
   },
   {
-    "id": "3",
+    "id": "2",
     "name": "paper",
     "image": "/assets/icon-paper.svg",
     "color": "blue",
     "position": "rightTop"
+  },
+  {
+    "id": "3",
+    "name": "rock",
+    "image": "/assets/icon-rock.svg",
+    "color": "red",
+    "position": "rightBottom"
   },
   {
     "id": "4",
