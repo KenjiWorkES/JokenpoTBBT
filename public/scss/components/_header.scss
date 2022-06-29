@@ -9,12 +9,20 @@
   animation: slideDown 1s;
   backface-visibility: hidden;
 
+  @include responsive(tab-port) {
+    margin: 0 1.5rem;
+  }
+
   &__box {
     background-color: $white;
     width: 17rem;
     text-align: center;
     padding: 1rem;
     border-radius: 1rem;
+
+    @include responsive(tab-port) {
+      width: 14rem;
+    }
   }
 
   &__text {
@@ -23,11 +31,19 @@
     text-transform: uppercase;
     font-weight: $weight-semibold;
     letter-spacing: 0.3rem;
+
+    @include responsive(tab-port) {
+      font-size: 1.8rem;
+    }
   }
 
   &__score {
     font-size: 6rem;
     font-weight: $weight-bold;
     color: $dark-gray;
+
+    @include responsive(tab-port) {
+      font-size: 5.5rem;
+    }
   }
 }

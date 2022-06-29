@@ -114,4 +114,18 @@
       transform: scale(1.5) rotate(25deg);
     }
   }
+
+  @include responsive(tab-port) {
+    width: 11rem;
+    height: 11rem;
+
+    &__background {
+      width: 8rem;
+      height: 8rem;
+    }
+
+    &__image {
+      width: 60%;
+    }
+  }
 }

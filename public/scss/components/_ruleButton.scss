@@ -20,4 +20,12 @@
     background-color: $white;
     color: $dark-gray;
   }
+
+  @include responsive(tab-port) {
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1.8rem;
+    padding: 0.5rem 2rem;
+    border-radius: 0.7rem;
+  }
 }
