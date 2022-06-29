@@ -15,7 +15,7 @@ const GameCoin = ({ image, color, position, id, game, onClick }) => {
       className={"coin " + colorClass + " " + positionClass + " " + gameClass}
       onClick={onClickHandler}
     >
-      <div className="coin__background">
+      <div className="coin__background" id={id} onClick={onClickHandler}>
         <CoinImage id={id} image={image} />
       </div>
     </button>
