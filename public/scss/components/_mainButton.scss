@@ -16,6 +16,11 @@
   transition: all 0.3s;
   animation: fadeIn 0.3s;
 
+  @include responsive(phone) {
+    padding: 0.5rem 3rem;
+    font-size: 1.8rem;
+  }
+
   &::after {
     content: "";
     z-index: -1;

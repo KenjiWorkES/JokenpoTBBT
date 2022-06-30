@@ -18,4 +18,11 @@
       height: 40rem;
     }
   }
+
+  @include responsive(phone) {
+    &__background {
+      width: 35rem;
+      height: 35rem;
+    }
+  }
 }

@@ -21,7 +21,7 @@ const StartPage = () => {
     <PageBackground>
       <GameHeader></GameHeader>
       <CoinPentagram></CoinPentagram>
-      <div className="pageBackground__container u-margin-top-big">
+      <div className="pageBackground__container u-margin-top-medium">
         <a href="#choice">
           <MainButton onClick={startPlayHandler} title="Play Now" />
         </a>

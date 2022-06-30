@@ -28,6 +28,10 @@
     border-radius: 15px;
     transform: translate(-50%, -50%) scale(0.8);
     transition: all 0.3s 0.1s;
+
+    @include responsive(phone) {
+      padding: 1rem;
+    }
   }
 
   &__header {

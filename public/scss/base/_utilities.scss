@@ -3,9 +3,17 @@
 }
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important;
+
+  @include responsive(phone) {
+    margin-bottom: 2rem !important;
+  }
 }
 .u-margin-bottom-big {
   margin-bottom: 6rem !important;
+
+  @include responsive(phone) {
+    margin-bottom: 2rem !important;
+  }
 }
 .u-margin-top-small {
   margin-top: 2rem !important;

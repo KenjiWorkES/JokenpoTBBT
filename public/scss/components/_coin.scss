@@ -14,6 +14,19 @@
     transform: scale(1.2) rotate(25deg);
   }
 
+  &__action {
+    width: 15rem;
+    height: 15rem;
+    z-index: 2000;
+    @include absoluteCenter;
+    border-radius: 50%;
+
+    @include responsive(tab-port) {
+      width: 11rem;
+      height: 11rem;
+    }
+  }
+
   //colors
   &--blue {
     background-image: linear-gradient(
@@ -126,6 +139,20 @@
 
     &__image {
       width: 60%;
+    }
+  }
+
+  @include responsive(phone) {
+    width: 10rem;
+    height: 10rem;
+
+    &__background {
+      width: 7rem;
+      height: 7rem;
+    }
+
+    &__image {
+      width: 50%;
     }
   }
 }

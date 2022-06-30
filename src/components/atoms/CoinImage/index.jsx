@@ -3,14 +3,7 @@ const CoinImage = ({ image, id, onClick }) => {
     onClick && onClick(event.target.id);
   };
 
-  return (
-    <img
-      id={id}
-      onClick={onClickHandler}
-      className="coin__image"
-      src={image}
-    ></img>
-  );
+  return <img className="coin__image" src={image}></img>;
 };
 
 export default CoinImage;

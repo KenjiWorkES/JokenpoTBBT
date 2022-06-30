@@ -29,33 +29,31 @@ const gameManager = createSlice({
     },
     calculateResult(state) {
       let hasResult = false;
-      conditions.map((condition) => {
+      conditions.forEach((condition) => {
         if (
           state.playerChoice === condition.win &&
-          state.houseChoice === condition.lose &&
-          !hasResult
+          state.houseChoice === condition.lose
         ) {
           state.result = 2;
           console.log("Win");
-          hasResult = true;
-          state.resultCounter += 1;
+          console.log(state.resultCounter);
+          state.resultCounter = state.resultCounter + 1;
         }
         if (
           state.houseChoice === condition.win &&
-          state.playerChoice === condition.lose &&
-          !hasResult
+          state.playerChoice === condition.lose
         ) {
           state.result = 1;
           console.log("Lose");
-          hasResult = true;
           if (state.resultCounter > 0) {
-            state.resultCounter -= 1;
+            state.resultCounter = state.resultCounter - 1;
           }
+          console.log(state.resultCounter);
         }
-        if (state.houseChoice === state.playerChoice && !hasResult) {
+        if (state.houseChoice === state.playerChoice) {
           state.result = 3;
           console.log("Draw");
-          hasResult = true;
+          console.log(state.resultCounter);
         }
       });
     },
