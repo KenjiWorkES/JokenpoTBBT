@@ -28,7 +28,6 @@ const gameManager = createSlice({
       ).toString();
     },
     calculateResult(state) {
-      let hasResult = false;
       conditions.forEach((condition) => {
         if (
           state.playerChoice === condition.win &&

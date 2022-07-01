@@ -1,8 +1,4 @@
-const CoinImage = ({ image, id, onClick }) => {
-  const onClickHandler = (event) => {
-    onClick && onClick(event.target.id);
-  };
-
+const CoinImage = ({ image, id }) => {
   return <img className="coin__image" src={image}></img>;
 };
 
