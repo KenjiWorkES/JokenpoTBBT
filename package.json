@@ -7,9 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "compile:sass": "node-sass scss/main.scss css/style.comp.css",
-    "concat:css": "concat -o css/style.concat.css css/icon.css css/style.comp.css",
-    "compress:css": "node-sass css/style.concat.css css/style.css --output-style compressed",
+    "compile:sass": "node-sass public/scss/main.scss public/css/style.comp.css",
+    "concat:css": "concat -o public/css/style.concat.css  public/css/style.comp.css",
+    "compress:css": "node-sass public/css/style.concat.css public/css/style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass concat:css compress:css"
   },
   "dependencies": {
